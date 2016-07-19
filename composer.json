@@ -1,0 +1,15 @@
+{
+    "name": "consultadobem/cdb-toolkit",
+    "description": "Libraries from CdB",
+    "type": "cdb-toolkit",
+    "require": {
+        "monolog/monolog": "1.*"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "CdBToolkit": "src/"
+        }
+    }
+}
