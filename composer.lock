@@ -109,6 +109,9 @@
                 }
             },
             "autoload": {
+                "psr-0": {
+                   "Cdbtoolkit": "src/"
+                },   
                 "psr-4": {
                     "Psr\\Log\\": "Psr/Log/"
                 }
