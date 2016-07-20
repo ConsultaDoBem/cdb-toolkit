@@ -28,11 +28,22 @@ class ComposerStaticInitb14a8248015bb28888ba9ae0da292b3f
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'C' => 
+        array (
+            'Cdbtoolkit' => 
+            array (
+                0 => __DIR__ . '/../..' . '/src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitb14a8248015bb28888ba9ae0da292b3f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb14a8248015bb28888ba9ae0da292b3f::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb14a8248015bb28888ba9ae0da292b3f::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
