@@ -8,8 +8,8 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": {
-            "CdBToolkit": "src/"
+        "psr-0": {
+            "Cdbtoolkit": "src/"
         }
     }
 }
